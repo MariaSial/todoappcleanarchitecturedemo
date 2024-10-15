@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:itec_practice_project/profile_view.dart';
+import 'package:itec_practice_project/Presentation/Widgets/Profile/profile_view.dart';
 
 void main() {
   runApp(const MyApp());
