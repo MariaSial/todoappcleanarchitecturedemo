@@ -5,7 +5,6 @@ import 'package:itec_practice_project/Presentation/Widgets/Profile/Components/ne
 import '../../../Data/DataSource/Resources/assets.dart';
 import '../../../Data/DataSource/Resources/text_style_const.dart';
 import 'Components/custom_divider.dart';
-import 'Components/grid_view_widget.dart';
 
 class ProfileView extends StatefulWidget {
   const ProfileView({super.key});
@@ -152,51 +151,7 @@ class _ProfileViewState extends State<ProfileView> {
                       ],
                     ),
                     SizedBox(height: 8),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Text(
-                            "Stats",
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
-                            textAlign: TextAlign.start,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Academic year: 2024",
-                                style: TextStyle(fontSize: 16),
-                                textAlign: TextAlign.start,
-                              ),
-                              Icon(Icons.calendar_month),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.23,
-                          child: GridView.count(
-                            crossAxisCount: 2,
-                            childAspectRatio: 3,
-                            shrinkWrap: true,
-                            physics: NeverScrollableScrollPhysics(),
-                            children: [
-                              GridViewWidget(),
-                              GridViewWidget(),
-                              GridViewWidget(),
-                              GridViewWidget(),
-                              GridViewWidget(),
-                              GridViewWidget(),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+
                     // Provide a constrained height for NestedScrollViewStats
                     Container(
                       height: MediaQuery.of(context).size.height *
